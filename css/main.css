@@ -6,9 +6,28 @@ body {
 .description {
   max-width: 800px;
 }
-table,
+
+th {
+  background: #dfdfdf;
+  font-weight: bold;
+}
+
+td,th {
+  border: 1px solid transparent;
+  height: 30px;
+}
+
+tr:nth-child(even)  td {
+  background: #f1f1f1;
+}
+tr:nth-child(odd) td {
+  background: #fefefe;
+}
+
 td {
-  border: 0.5px dashed #333;
+  padding: 0 10px;
+  background: #fafafa;
+  text-align: left;
 }
 
 .chart-footer {
